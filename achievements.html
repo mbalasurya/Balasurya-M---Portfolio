@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievements | Balasurya M</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-image: url(a2.webp);
+      background-position: 900px;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav .active {
+      color: #2196F3;
+    }
+
+    /* Container */
+    .achievements-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #dcdcdc;
+    }
+
+    .achievement-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-left: 5px solid #00ff99;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      transform: translateY(20px);
+      opacity: 0.9;
+      animation: slideUp 0.6s ease forwards;
+    }
+
+    .achievement-item:nth-child(even) {
+      border-left-color: #ff4e50;
+    }
+
+    .achievement-item h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .achievement-item p {
+      color: #e0e0e0;
+    }
+
+    .achievement-item:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+
+   /* footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      color: #eee;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    footer a {
+      color: #c0c0ff;
+      text-decoration: none;
+      margin-left: 0.5rem;
+      font-weight: 500;
+    } */
+
+    /* Animations */
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-title">Balasurya M :)</div>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="Projects.html">Projects</a>
+      <a href="internships.html">Internships</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html" class="active">Achievements & Awards</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="achievements-container">
+      <h1>My Achievements</h1>
+      <p class="intro-text">Here are some of my proudest accomplishments that demonstrate my technical skills and dedication:</p>
+
+      <div class="achievement-item">
+        <h3>Intel OneAPI Hackathon Winner (2023)</h3>
+        <p>Developed an innovative data processing solution using Intel's OneAPI that outperformed 50+ competing projects, winning the first prize.</p>
+      </div>
+
+      <div class="achievement-item">
+        <h3>Intel Student Ambassador (2023–2024)</h3>
+        <p>Selected among top students nationwide to represent Intel technologies, conducting workshops and mentoring peers.</p>
+      </div>
+
+      <div class="achievement-item">
+        <h3>Wipro TalentNext Java Full Stack Certification (2024)</h3>
+        <p>Completed intensive 200-hour training program covering Java, Spring Boot, React, and microservices architecture.</p>
+      </div>
+
+      <div class="achievement-item">
+        <h3>Academic Topper Award (2025)</h3>
+        <p>Achieved top academic performance in Computer Science at Jansons Institute of Technology with 8.8 CGPA.</p>
+      </div>
+
+      <div class="achievement-item">
+        <h3>NPTEL Elite Certificate (2023)</h3>
+        <p>Ranked in top 5% nationally in IIT Madras's "Data Structures and Algorithms" course through NPTEL platform.</p>
+      </div>
+
+      <div class="achievement-item">
+        <h3>Recycling Championship Award (2018)</h3>
+        <p>Won inter-school competition for developing an eco-friendly paper recycling system that reduced waste by 40%.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year">2023</span> Balasurya M |
+      <a href="mailto:mbalasuriya004@gmail.com"><i class="fas fa-envelope"></i> mbalasuriya004@gmail.com</a> |
+      <a href="tel:9952898641"><i class="fas fa-phone"></i> 9952898641</a>
+    </p>
+  </footer>
+
+  <script>
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

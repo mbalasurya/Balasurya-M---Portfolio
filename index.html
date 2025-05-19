@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Balasurya M</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/28d4f8e2c7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(120deg, #2196F3, #4CAF50);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 25px;
+      padding: 20px 80px;
+      background-color: black;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+
+    .title {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #2196F3;
+    }
+
+    .main {
+      padding: 80px 20px;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+      flex-direction: row-reverse;
+      animation: slideInUp 1s ease-out;
+    }
+
+    .image-box {
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      flex-shrink: 0;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .text-box {
+      flex: 1;
+      text-align: left;
+    }
+
+    .text-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffe600;
+    }
+
+    .text-box p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+.edu-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #fff;
+  margin: 40px auto;
+  padding: 50px 40px;
+  border-radius: 25px;
+  max-width: 850px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
+  animation: floatUp 1.5s ease forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.95) rotateX(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+  }
+}
+
+.edu-section h2 {
+  font-size: 2.8rem;
+  color: gold;
+  margin-bottom: 25px;
+  position: relative;
+  text-shadow: 0 0 10px lightblue, 0 0 20px darkred;
+  animation: glowBounce 1s ease;
+}
+
+@keyframes glowBounce {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.edu-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  height: 5px;
+  width: 70px;
+  background: linear-gradient(to right, #00ff99, gold);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00ccff;
+  animation: expandLine 1s ease-out;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+.edu-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.edu-section li {
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.edu-section li:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05) rotateY(5deg);
+  border-left: 5px solid gold;
+  box-shadow: 0 0 10px gold;
+  color:white;
+  text-shadow: 0 0 5px gold;
+}
+
+.edu-section li:last-child {
+  border-bottom: none;
+}
+
+
+
+    /* footer {
+      text-align: center;
+      background: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #2196F3;
+      text-decoration: none;
+    } */
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px 30px;
+      }
+
+      .main-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-box {
+        text-align: center;
+      }
+
+      .text-box h1 {
+        font-size: 2rem;
+      }
+
+      .text-box p {
+        font-size: 1.1rem;
+      }
+    }
+
+     video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <video class="bg-video" autoplay muted loop>
+  <source src="v5.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  <header>
+    <div class="title">Balasurya M :)</div>
+    <nav>
+      <a href="index.html" class="active">About</a>
+      <a href="Projects.html">Projects</a>
+      <a href="internships.html">Internships</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html">Achievements & Awards</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="main-content">
+      <div class="image-box">
+        <img src="me.jpg" alt="Balasurya M">
+      </div>
+      <div class="text-box">
+        <h1>👋 Hi, I'm Balasurya M</h1>
+        <p>
+          I’m a passionate and curious Computer Science student, driven by a desire to innovate, learn constantly, and contribute meaningfully to the digital world. With a strong foundation in software development and problem-solving, I strive to build solutions that make a real impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <ul>
+      <li><strong>Jansons Institute of Technology</strong><br>B.E (Hons), CSE — <b>8.8 CGPA</b> (2021–2025)</li>
+      <li><strong>Swathanthra Higher Secondary School</strong><br>HSC — <b>84.4%</b> (2021)</li>
+      <li><strong>Government Higher Secondary School</strong><br>SSLC — <b>77.8%</b> (2019)</li>
+    </ul>
+  </section>
+
+ <footer>
+    <p>
+      © <span id="year">2023</span> Balasurya M |
+      <a href="mailto:mbalasuriya004@gmail.com"><i class="fas fa-envelope"></i> mbalasuriya004@gmail.com</a> |
+      <a href="tel:9952898641"><i class="fas fa-phone"></i> 9952898641</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
